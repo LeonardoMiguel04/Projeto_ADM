@@ -29,10 +29,10 @@
 body {
     display: grid;
     grid-template-areas: 
-        "cabeca cabeca cabeca cabeca"
-        "aside nav nav nav"
-        "aside corpo corpo corpo"
-        "roda roda roda roda";
+        "cabeca cabeca cabeca"
+        "nav nav nav "
+        "aside corpo corpo"
+        "roda roda roda";
     grid-template-columns: 250px 1fr 1fr;
     grid-template-rows: 250px auto auto;
 }
@@ -164,22 +164,41 @@ aside{
 main{
     grid-area: corpo;
     background-color: #f2f2f2;
-	padding-left: 450px;
 }
 
 footer{
     grid-area: roda;
-    background-color: gray;
+    background-color: gray; 
 }
 
 h2{
 	color: white;
 }
 
-.bancada{
-	padding-left: 220px;
+.bar1{
+	padding-left: 170px;
 }
 
-.bar{
-	padding-right: 310px;
+.bar2{
+	padding-left: 250px;
+}
+
+.bar3{
+	padding-left: 170px;
+}
+
+.bar4{
+	padding-left: 250px;
+}
+
+.bar5{
+	padding-left: 170px;
+}
+
+.bar6{
+	padding-left: 250px;
+}
+
+h1{
+	padding-left: 450px;
 }
