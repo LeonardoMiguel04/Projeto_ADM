@@ -42,8 +42,8 @@ body {
 }
 #menu {
 	background: #F2F2F2;
-	height: 40px;
-	border-radius: 0px;
+	height: 45px;
+	border-radius: 10px;
 }
 #menu ul, #menu li {
 	margin: 0 auto;
@@ -52,7 +52,7 @@ body {
 }
 #menu ul {
 	width: 100%;
-	padding-left: 575px;
+	text-align: center;
 }
 #menu li {
 	display: inline-block;
@@ -64,8 +64,8 @@ body {
 	padding: 0 14px;
 	text-decoration: none;
 	color: #36733A;
-	font-size: 19px;
-	text-transform: capitalize;
+	font-size: 17px;
+	text-transform: uppercase;
 }
 #menu a.dropdown-arrow:after {
 	content: "\2193";
@@ -82,7 +82,7 @@ body {
 	height: 45px;
 	width: 100%;
 	opacity: 0;
-	cursor: pointer;
+	cursor: pointer
 }
 #menu label {
 	display: none;
@@ -114,7 +114,7 @@ body {
 #menu ul.sub-menus a {
 	color: #36733A;
 	font-size: 16px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 #menu li:hover ul.sub-menus {
 	display: block
@@ -123,6 +123,84 @@ body {
 	background: #F2F2F2;
 	color: #05371E;
 }
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#36733A}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background:#F2F2F2;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
@@ -168,7 +246,8 @@ main{
 
 footer{
     grid-area: roda;
-    background-color: gray; 
+    background-color: #1c1c1c; 
+	color: white;
 }
 
 h2{
@@ -201,4 +280,10 @@ h2{
 
 h1{
 	padding-left: 450px;
+}
+
+.foot{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
