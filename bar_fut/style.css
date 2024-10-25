@@ -1,0 +1,279 @@
+/* Paleta de cores para o bar temático */
+:root {
+    --primary-color: #05371E;
+    --primary-color: rgb(5, 56, 31, 0.8);
+    --secondary-color: #F4D35E; /* Amarelo vibrante */
+    --accent-color: #ffffff; /* Laranja suave */
+    --text-color: white;
+    --dark-color: #333;
+    --btn-color: #F95738; /* Laranja avermelhado */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--dark-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--btn-color);
+}
+
+main {
+    background-image: url(img/fundo.jpg);
+    margin: 0;
+    padding: 20px 0 20px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.section {
+    margin-bottom: 50px;
+
+}
+
+.section h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+#sobre p {
+    text-align: justify;
+}
+
+/* Cardápio */
+#cardapio .item-cardapio {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+#cardapio .item-cardapio h3 {
+    color: var(--secondary-color);
+}
+
+#cardapio .item-cardapio span {
+    color: var(--accent-color);
+}
+
+#ambiente .texto{
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+/* Estilos para as imagens */
+.fotos-ambiente {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foto {
+    width: 300px;
+    margin: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 3px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, 0.5);
+
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-conteudo {
+    display: block;
+    margin: auto;
+    max-width: 100%;  /* Limita a largura da imagem */
+    max-height: 100%; /* Limita a altura da imagem */
+    border-radius: 8px;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.if_maps{
+    text-align: center;
+}
+iframe{
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+
+/* Próximas Atrações */
+.atracoes {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.atracoes h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.atracoes ul {
+    list-style: none;
+}
+
+.atracoes ul li {
+    margin-bottom: 10px;
+}
+
+.contato{
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, 0.5);
+
+}
+.instagram-media{
+    width: auto;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--btn-color);
+}
+
+footer .social-media {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #fotos .foto {
+        width: 48%;
+    }
+
+    #cardapio .item-cardapio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modal-conteudo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #fotos .foto {
+        width: 100%;
+    }
+
+    header .hero {
+        height: 200px;
+    }
+    .modal-conteudo {
+        display: none;
+    }
+
+}
+
+h2{
+    text-shadow: 1px 1px 2px red, 0 0 1em var(--primary-color), 0 0 0.2em var(--primary-color);
+}
