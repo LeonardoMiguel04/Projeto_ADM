@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Soccer Pub</title>
+    <title>SoccerPub</title>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/taca-icon.png">
 </head>
+
 <body>
-    <header>
-        <img src="imagens/logosoccer.jpg">
-      
+    <img src="imagens/logosoccer.jpg" class="logo">
+    <header class="header">
+            <nav class="nav">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label-menu">
+                    Menu <span class="hamburguer"></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="imagens/card.png" target="_blank">Cardápio</a></li>
+                </ul>
+            </nav>    
     </header>
-   <div class="container">
-    <nav id='menu'>
-      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-      <ul>
-        <li><a href='http://'>Início</a></li>
-        <li><a class='dropdown-arrow' href='http://'>Cardápio</a>
-          <ul class='sub-menus'>
-            <li><a href='http://'>Comidas</a></li>
-            <li><a href='http://'>Bebidas</a></li>
-          </ul>
-        </li>
-        <li><a href='http://'>Sobre Nós</a></li>
-      </ul>
-    </nav>
-   </div>
+
     <aside>
-        <h2>EM BREVE!</h2>
+        <h2>Próximos Jogos</h2>
+    <ul>
+        <li>
+            <div class="game">
+                <span class="time">25/10 - 18:00</span>
+                <span class="teams">Flamengo x Palmeiras</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">28/10 - 16:00</span>
+                <span class="teams">Barcelona x Real Madrid</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">29/10 - 15:00</span>
+                <span class="teams">Manchester City x Manchester United</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">01/11 - 20:00</span>
+                <span class="teams">Paris Saint-Germain x Bayern Munich</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">03/11 - 17:00</span>
+                <span class="teams">Juventus x Inter de Milão</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">05/11 - 19:00</span>
+                <span class="teams">Liverpool x Chelsea</span>
+            </div>
+        </li>
+        <li>
+            <div class="game">
+                <span class="time">07/11 - 21:00</span>
+                <span class="teams">Atlético de Madrid x Sevilla</span>
+            </div>
+        </li>
+    </ul>
     </aside>
+
     <main>
-        <h1>Venha Conhecer Nosso Ambiente!</h1>
-        <img src="imagens/bar1.jpg" class="bar1">
-        <img src="imagens/bar2.jpg" class="bar2">
-        <img src="imagens/bar3.jpg" class="bar3">
-        <img src="imagens/bar4.jpg" class="bar4">
-        <img src="imagens/bar5.jpeg" class="bar5">
-        <img src="imagens/bar6.jpeg" class="bar6">
+        <section class="imagens-container">
+            <div class="imagem-item">
+                <img src="imagens/bancada.jpg" class="imagem">
+                <p class="descricao">Um bar temático de futebol, com decoração descontraída, TV para jogos e um balcão de madeira clássico. Perfeito para torcer com os amigos.</p>
+            </div>
+            <div class="imagem-item">
+                <img src="imagens/bar1.jpg" class="imagem">
+                <p class="descricao">Um bar sofisticado com vista para um campo, design moderno e iluminação elegante. Ideal para relaxar com bebidas premium e coquetéis ao pôr do sol.</p>
+            </div>
+            <div class="imagem-item">
+                <img src="imagens/bar2.jpg" class="imagem">
+                <p class="descricao">Um espaço moderno e descontraído, com iluminação criativa, jogos de dardos e uma vasta seleção de drinks. Perfeito para happy hour com amigos.</p>
+            </div>
+            <div class="imagem-item">
+                <img src="imagens/bar3.jpg" class="imagem">
+                <p class="descricao">Um bar esportivo intimista, com decoração temática de esportes americanos e iluminação estilosa. Ótimo para curtir jogos em um ambiente aconchegante.</p>
+            </div>
+            <div class="imagem-item">
+                <img src="imagens/bar4.jpg" class="imagem">
+                <p class="descricao">Assista às partidas em uma TV estrategicamente posicionada enquanto desfruta de nossas bebidas exclusivas. Venha torcer com estilo e celebrar com seus amigos!</p>
+            </div>
+            <div class="imagem-item">
+                <img src="imagens/bar5.jpeg" class="imagem">
+                <p class="descricao">Com iluminação criativa, um extenso cardápio de bebidas e um alvo de dardos para diversão extra, seu happy hour nunca será o mesmo.</p>
+            </div>
+        </section>
     </main>
+
     <footer>
-      <div class="foot">
-          <div>
-            <h3>Suporte</h3>
-          </div>
-          <div></div>
-            <h3>Sobre Nós</h3>
-          </div>
-          <div>
-            <h3>Redes sociais</h3>
-          </div>
-      </div>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Sobre Nós</h3>
+                <p>Bem-vindo ao SoccerPub, o lugar onde a paixão pelo futebol e o clima de bar se encontram! Aqui, respiramos futebol 24 horas por dia, 7 dias por semana, seja para discutir os últimos lances, rever jogadas épicas ou acompanhar as maiores rivalidades do esporte mais amado do planeta.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p>Email: exemplo@exemplo.com</p>
+                <p>Telefone: (123) 456-7890</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
